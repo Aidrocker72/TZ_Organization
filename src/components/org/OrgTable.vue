@@ -19,7 +19,7 @@
           v-for="it in items"
           :key="it.id"
           class="org-table__row"
-          @click="rowClick(it, $event)"
+          @click="rowClick(it)"
         >
           <td class="org-table__cell">{{ it.name }}</td>
           <td class="org-table__cell">{{ it.director }}</td>
@@ -78,7 +78,7 @@ const remove = (id: string) => {
   emits('delete', id);
 }
 
-const rowClick = (item: IOrganization, ev: Event) => {
+const rowClick = (item: IOrganization) => {
   emits('row-click', item);
 }
 
