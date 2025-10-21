@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <UIHeader>
-      <h1 class="home-page__header-title">Справочник организаций</h1>
+      <h2 class="home-page__header-title">Справочник организаций</h2>
       <UIButton @click="openAdd">Добавить</UIButton>
     </UIHeader>
 
@@ -91,5 +91,10 @@ const onDelete = (id: string) => {
 .home-page {
   display: grid;
   gap: 25px;
+
+  &__header-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+  }
 }
 </style>
