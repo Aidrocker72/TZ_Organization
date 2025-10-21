@@ -103,12 +103,12 @@ const toggleSort = (key: 'name' | 'director') => {
   max-height: 400px;
   min-height: 400px;
   overflow-y: auto;
+  position: relative;
 
   &__table {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
-    position: relative;
     font-size: var(--font-size-sm);
     color: var(--color-text);
   }
